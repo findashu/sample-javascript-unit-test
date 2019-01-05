@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="../node_modules//mocha/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/sinon/pkg/sinon.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        mocha.setup('bdd')
+        mocha.reporter('html');
+    </script>
+
+
+    <!-- Tests -->
+    <script src="../src/basic-functions.js"></script>
+    <script src="../src/ajax.js"></script>
+    <script src="tests.js"></script>
+
+  <script>
+    // Only tests run in real browser, injected script run if options.run == true
+    if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+      mocha.run();
+    }
+  </script>
+
+
+</body>
+
+</html>

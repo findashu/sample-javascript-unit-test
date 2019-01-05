@@ -1,0 +1,18 @@
+{
+  "name": "js-testing-grunt-mocha-chai",
+  "version": "1.0.0",
+  "description": "Sample JS Testing",
+  "keywords": [],
+  "author": "ashutosh mishra",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "grunt": "^1.0.3",
+    "grunt-mocha": "^1.1.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
